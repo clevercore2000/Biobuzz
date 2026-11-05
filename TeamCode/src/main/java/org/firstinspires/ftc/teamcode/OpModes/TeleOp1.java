@@ -23,7 +23,7 @@ public class TeleOp1 extends LinearOpMode {
 
         waitForStart();
         while (opModeIsActive()) {
-            chassis.drive(gamepad1.left_stick_y, gamepad1.left_stick_x, gamepad1.right_stick_x);
+            chassis.drive(-gamepad1.left_stick_y, gamepad1.left_stick_x, gamepad1.right_stick_x);
             if(gamepad2.a) {
                 intake.start();
                 transfer.start();

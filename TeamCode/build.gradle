@@ -16,6 +16,10 @@ apply plugin: 'com.android.application'
 apply from: '../build.common.gradle'
 apply from: '../build.dependencies.gradle'
 
+repositories {
+    maven { url = 'https://maven.brott.dev/' }
+}
+
 android {
     namespace = 'org.firstinspires.ftc.teamcode'
 
@@ -26,4 +30,5 @@ android {
 
 dependencies {
     implementation project(':FtcRobotController')
+    implementation 'com.acmerobotics.dashboard:dashboard:0.6.0'
 }

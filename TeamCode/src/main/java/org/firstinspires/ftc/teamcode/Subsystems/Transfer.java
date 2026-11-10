@@ -15,6 +15,9 @@ public class Transfer {
     public void start() {
         start(Constants.Transfer.TRANSFER_POWER);
     }
+    public void reverse() {
+        start(-Constants.Transfer.TRANSFER_POWER);
+    }
     public void stop() {
         start(0);
     }

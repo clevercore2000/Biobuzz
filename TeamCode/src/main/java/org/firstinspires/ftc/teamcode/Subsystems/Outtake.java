@@ -21,6 +21,7 @@ public class Outtake {
         start(0, 0);
     }
     public void toggle() {
+        isActive = !isActive;
         if(isActive) start();
         else stop();
     }
